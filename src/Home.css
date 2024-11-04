@@ -1,0 +1,47 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* שים את התוכן למעלה */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* אותו רקע כמו ה-ProfilePage */
+}
+.post {
+    width: 100%; /* רוחב מלא */
+    max-width: 300px; /* גבול רוחב מקסימלי */
+    background: white; /* צבע הרקע של הפוסטים */
+    padding: 5px; /* רווחים פנימיים */
+    margin: 10px 0; /* מרווחים בין פוסטים */
+    border-radius: 5px; /* פינות מעוגלות */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* צל קל */
+    overflow-wrap: break-word; /* מאפשר למילים ארוכות להתפצל לשורות חדשות */
+    word-wrap: break-word; /* חלוקה של מילים ארוכות לשורות */
+    white-space: pre-wrap; /* שומר על רווחים ומעברי שורה שנוספו בטקסט */
+    overflow: hidden; /* מונע גלישה של התוכן מחוץ לגבולות הפוסט */
+
+}
+
+/*.posts-container {*/
+/*    max-height: 465px; !* גובה מקסימלי לקונטיינר *!*/
+/*    width: 325px; !* מאפשר לקונטיינר הפוסטים לתפוס את כל הרוחב *!*/
+/*    max-width: 600px; !* רוחב מקסימלי לקונטיינר *!*/
+/*    overflow-y: auto; !* מאפשר גלילה אנכית כשהפוסטים חורגים מגובה הקונטיינר *!*/
+/*    padding: 10px; !* רווח פנימי *!*/
+/*    border: 1px solid #ddd; !* קו מסביב *!*/
+/*    border-radius: 20px; !* פינות מעוגלות *!*/
+/*    background-color: #f9f9f9; !* צבע רקע בהיר *!*/
+
+/*}*/
+.posts-container {
+    position: fixed; /* משאיר את הקונטיינר במיקום קבוע */
+    top: 100px; /* מגדיר את החלק העליון של הקונטיינר להתחיל בגובה מסוים */
+    bottom: 38px; /* מגדיר מרווח מהתחתית כדי למנוע גלישה */
+    width: 325px; /* רוחב קבוע */
+    max-width: 600px; /* רוחב מקסימלי */
+    max-height: calc(100vh - 120px); /* גובה מקסימלי תוך לקיחה בחשבון את המרווחים מלמעלה ומלמטה */
+    overflow-y: auto; /* מאפשר גלילה אנכית */
+    padding: 10px; /* רווח פנימי */
+    border: 1px solid #ddd; /* קו מסביב */
+    border-radius: 20px; /* פינות מעוגלות */
+    background-color: #f9f9f9; /* צבע רקע */
+}

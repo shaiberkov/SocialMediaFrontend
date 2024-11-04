@@ -1,0 +1,110 @@
+
+/*.post-form-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);*/
+/*    justify-content: flex-start;*/
+/*}*/
+
+/*.post-form-container textarea {*/
+/*    width: 100%; !* מאפשר לעבור כל רוחב *!*/
+/*    max-width: 600px; !* גבול רוחב מקסימלי *!*/
+/*    height: 75px; !* גובה קבוע *!*/
+/*    padding: 10px; !* רווחים פנימיים *!*/
+/*    border: 1px solid #ddd; !* קו מסביב *!*/
+/*    border-radius: 10px; !* פינות מעוגלות *!*/
+/*    font-size: 16px; !* גודל טקסט *!*/
+/*    margin-bottom: 5px; !* מרווח תחתון *!*/
+/*    resize: none; !* מניעת שינוי גובה שדה הטקסט *!*/
+/*}*/
+
+/*.post-form-container button {*/
+/*    padding: 10px 20px; !* רווחים פנימיים *!*/
+/*    background-color: #6c63ff; !* צבע רקע הכפתור *!*/
+/*    color: #ffffff; !* צבע טקסט *!*/
+/*    border: none; !* מסיר קו מסביב *!*/
+/*    border-radius: 20px; !* פינות מעוגלות *!*/
+/*    cursor: pointer; !* מצביע על כך שזה כפתור *!*/
+/*    transition: background-color 0.3s ease; !* אנימציה חלקה *!*/
+/*    margin-top: 5px; !* מרווח עליון *!*/
+/*}*/
+
+/*.post-form-container button:hover {*/
+/*    background-color: #5753c9; !* שינוי צבע בעת רחף *!*/
+/*}*/
+
+/*.post {*/
+/*    width: 100%; !* רוחב מלא *!*/
+/*    max-width: 300px; !* גבול רוחב מקסימלי *!*/
+/*    background: white; !* צבע הרקע של הפוסטים *!*/
+/*    padding: 5px; !* רווחים פנימיים *!*/
+/*    margin: 10px 0; !* מרווחים בין פוסטים *!*/
+/*    border-radius: 5px; !* פינות מעוגלות *!*/
+/*    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); !* צל קל *!*/
+/*    overflow-wrap: break-word; !* מאפשר למילים ארוכות להתפצל לשורות חדשות *!*/
+/*    word-wrap: break-word; !* חלוקה של מילים ארוכות לשורות *!*/
+/*    white-space: pre-wrap; !* שומר על רווחים ומעברי שורה שנוספו בטקסט *!*/
+/*    overflow: hidden; !* מונע גלישה של התוכן מחוץ לגבולות הפוסט *!*/
+/*}*/
+.post-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    justify-content: flex-start;
+}
+
+.post-form-container textarea {
+    width: 100%; /* מאפשר לעבור כל רוחב */
+    max-width: 600px; /* גבול רוחב מקסימלי */
+    height: 75px; /* גובה קבוע */
+    padding: 10px; /* רווחים פנימיים */
+    border: 1px solid #ddd; /* קו מסביב */
+    border-radius: 10px; /* פינות מעוגלות */
+    font-size: 16px; /* גודל טקסט */
+    margin-bottom: 5px; /* מרווח תחתון */
+    resize: none; /* מניעת שינוי גובה שדה הטקסט */
+}
+
+.post-form-container button {
+    padding: 10px 20px; /* רווחים פנימיים */
+    background-color: #6c63ff; /* צבע רקע הכפתור */
+    color: #ffffff; /* צבע טקסט */
+    border: none; /* מסיר קו מסביב */
+    border-radius: 20px; /* פינות מעוגלות */
+    cursor: pointer; /* מצביע על כך שזה כפתור */
+    transition: background-color 0.3s ease; /* אנימציה חלקה */
+    margin-top: 5px; /* מרווח עליון */
+}
+
+.post-form-container button:hover {
+    background-color: #5753c9; /* שינוי צבע בעת רחף */
+}
+
+.post {
+    width: 100%; /* רוחב מלא */
+    max-width: 300px; /* גבול רוחב מקסימלי */
+    background: white; /* צבע הרקע של הפוסטים */
+    padding: 5px; /* רווחים פנימיים */
+    margin: 10px 0; /* מרווחים בין פוסטים */
+    border-radius: 5px; /* פינות מעוגלות */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* צל קל */
+    overflow-wrap: break-word; /* מאפשר למילים ארוכות להתפצל לשורות חדשות */
+    word-wrap: break-word; /* חלוקה של מילים ארוכות לשורות */
+    white-space: pre-wrap; /* שומר על רווחים ומעברי שורה שנוספו בטקסט */
+    overflow: hidden; /* מונע גלישה של התוכן מחוץ לגבולות הפוסט */
+}
+
+.posts-container {
+    max-height: 465px; /* גובה מקסימלי לקונטיינר */
+    width: 325px; /* מאפשר לקונטיינר הפוסטים לתפוס את כל הרוחב */
+    max-width: 600px; /* רוחב מקסימלי לקונטיינר */
+    overflow-y: auto; /* מאפשר גלילה אנכית כשהפוסטים חורגים מגובה הקונטיינר */
+    padding: 10px; /* רווח פנימי */
+    border: 1px solid #ddd; /* קו מסביב */
+    border-radius: 20px; /* פינות מעוגלות */
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+}

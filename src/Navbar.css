@@ -1,0 +1,31 @@
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f9fa;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 350px; /* כדי לוודא שהניווט יתפוס את כל הרוחב */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly; /* מפזר את האלמנטים בצורה שווה */
+    width: 350px; /* מבטיח שהאלמנטים יתפזרו בצורה מלאה */
+    max-width: 350px; /* מגביל את הרוחב המקסימלי */
+    margin: 0 auto; /* ממרכז את התוכן */
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+.navbar-container a.active {
+    color: rgba(6, 6, 254, 0.8); /* צבע טקסט שונה עבור הקישור הפעיל */
+    background-color: #ffffff; /* צבע רקע שונה עבור הקישור הפעיל */
+    border-radius: 8px; /* עיגול הפינות עבור הקישור הפעיל */
+}

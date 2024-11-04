@@ -1,0 +1,75 @@
+/* App.css */
+
+.App {
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-container, .login-form, .signup-form, .profilepage-container,.search-page-container,.post-form-container,.home-page-container {
+  width: 350px; /* רוחב קבוע */
+  height: 450px; /* גובה קבוע */
+  display: flex;
+  flex-direction: column; /* כדי למקם את תוכן הטופס בתור */
+  justify-content: center; /* מרכז את התוכן אנכית */
+  align-items: center; /* מרכז את התוכן אופקית */
+  background-color: white; /* צבע רקע ללבן */
+  border-radius: 10px; /* פינות מעוגלות */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל */
+}
+/*.logout-button {*/
+/*  position: fixed;!* משאיר את הכפתור בתוך הקומפוננטה *!*/
+/*  top: 0px; !* מרחק מהחלק העליון *!*/
+/*  right: 780px;*/
+/*  background-color: #f44336; !* צבע רקע אדום *!*/
+/*  color: white; !* צבע טקסט לבן *!*/
+/*  border: none; !* מסיר את הקו מסביב לכפתור *!*/
+/*  border-radius: 50%; !* עיגול הכפתור *!*/
+/*  padding: 15px; !* רווחים פנימיים *!*/
+/*  font-size: 16px; !* גודל הטקסט *!*/
+/*  cursor: pointer; !* מצביע על כך שזה כפתור *!*/
+/*  transition: transform 0.3s ease-in-out, background-color 0.3s ease; !* אנימציות חלקות *!*/
+/*  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); !* צל *!*/
+/*  margin: 10px 0 0 10px; !* מיקום הכפתור בפינה השמאלית *!*/
+/*}*/
+
+/*.logout-button:hover {*/
+/*  transform: scale(1.1); !* הגדלת הכפתור בעת רחף *!*/
+/*  background-color: #e53935; !* שינוי צבע רקע בעת רחף *!*/
+/*}*/
+
+/*.logout-button:active {*/
+/*  transform: scale(0.9); !* הקטנת הכפתור בעת לחיצה *!*/
+/*  background-color: #d32f2f; !* שינוי צבע רקע בעת לחיצה *!*/
+/*}*/
+.logout-button {
+  position: fixed; /* משאיר את הכפתור קבוע במסך */
+  top: -15px; /* מרחק מהחלק העליון */
+  right: 828px; /* מרחק מהצד הימני */
+  background-color: white; /* צבע רקע לבן */
+  color: rgba(28, 28, 26, 0.8); /* צבע טקסט אדום */
+  border: none; /* מסיר את הקו מסביב לכפתור */
+  border-radius: 5px; /* פינות מעוגלות קלות */
+  padding: 8px 12px; /* רווחים פנימיים - גובה קטן ורוחב */
+  font-size: 14px; /* גודל טקסט קטן יותר */
+  cursor: pointer; /* מצביע על כך שזה כפתור */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* אנימציות חלקות */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* צל קל */
+  outline: none; /* מסיר את הקו שסביב הכפתור בעת פוקוס */
+}
+
+.logout-button:hover {
+  transform: scale(1.05); /* הגדלת הכפתור בעת רחף */
+  background-color: #f0f0f0; /* צבע רקע בהיר בעת רחף */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל מודגש יותר בעת רחף */
+}
+
+.logout-button:active {
+  transform: scale(0.95); /* הקטנת הכפתור בעת לחיצה */
+  background-color: #e0e0e0; /* צבע רקע בהיר בעת לחיצה */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* צל קל בעת לחיצה */
+}

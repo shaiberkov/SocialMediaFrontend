@@ -1,0 +1,90 @@
+
+.search-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* שים את התוכן למעלה */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* אותו רקע כמו ה-ProfilePage */
+}
+
+
+.search-form {
+    margin-top: 20px; /* מרווח קטן מלמעלה */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 170px; /* קובע רוחב קטן יותר לשדה החיפוש */
+    padding: 8px; /* מקטין את הרווחים הפנימיים */
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 10px; /* מקטין את הרווחים הפנימיים ////////////////////////*/
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #5753c9;
+}
+.users-container {
+    display: flex;
+    flex-direction: column; /* כדי למקם את המלבנים אחד מתחת לשני */
+    gap: 10px; /* רווח בין המלבנים */
+    /*padding: 20px; !* רווח פנימי לקונטיינר *!*/
+    padding: 20px;
+    top: 100px; /* מגדיר את החלק העליון של הקונטיינר להתחיל בגובה מסוים */
+    bottom: 38px; /* מגדיר מרווח מהתחתית כדי למנוע גלישה */
+    max-height: 535px; /* גובה מקסימלי לקונטיינר */
+    overflow-y: auto; /* אפשר גלילה אנכית אם התוכן חורג מהגובה */
+    border: 1px solid #ddd; /* קו מסביב לקונטיינר */
+    border-radius: 10px; /* פינות מעוגלות */
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+
+}
+
+.user-card {
+    padding: 15px; /* רווח פנימי במלבן */
+    border: 1px solid #ddd; /* קו מסביב למלבן */
+    border-radius: 10px; /* פינות מעוגלות */
+    background-color: white; /* צבע רקע לבן */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* צל קל */
+}
+
+.user-name {
+    margin: 0; /* מסיר רווחים מהכותרת */
+}
+
+.user-button {
+    margin-top: 10px; /* מרווח בין הכותרת לכפתור */
+    padding: 5px 15px; /* רווחים פנימיים */
+    background-color: #4CAF50; /* צבע רקע ירוק */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* מסיר את הקו מסביב לכפתור */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* מצביע על כך שזה כפתור */
+    transition: background-color 0.3s ease; /* אנימציה חלקה */
+}
+
+.user-button:hover {
+    background-color: #45a049; /* שינוי צבע בעת רחף */
+}
+.server-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.user-button.followed {
+    background-color: blue; /* צבע רקע כחול */
+    color: white; /* צבע טקסט לבן */
+}
